@@ -14,7 +14,12 @@ fn main() {
         Mismatches = 0
      */
 
-    block_on(parallel_sums_64::run()).unwrap();
+    // 1. INTRODUCTION
+    block_on(introduction::run()).unwrap();
+
+    // 2. Parallel Sums (64)
+    // block_on(parallel_sums_64::run()).unwrap();
+    
 
     // #[cfg(feature="sort")]
     // compute::sort::run().block_on().unwrap();
